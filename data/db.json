@@ -1,0 +1,208 @@
+{
+  "users": [
+    {
+      "id": "924aa1e0-9241-4275-b534-48a9e02eb592",
+      "username": "admin",
+      "email": "admin@digitron.local",
+      "password_hash": "cdd3193a7fedcc5f54f19434270e430e24d3fe81eff3d042d216ddc7f1324182006d3526ae9f9689762e992636e6db795c453f96863b033a68d9a25b85bf107f",
+      "salt": "a017cfd092ce47a31f0e59653e415a37",
+      "role": "admin",
+      "created_at": "2026-10-26T12:47:13.623Z",
+      "failed_attempts": 1,
+      "last_login": "2026-10-26T12:49:17.692Z"
+    }
+  ],
+  "computers": [
+    {
+      "id": "7b0ded63-b063-40f8-8a40-9b3daf1e285b",
+      "hostname": "TI-NOTE-01",
+      "logged_user": "joao.silva",
+      "ip_address": "192.168.1.55",
+      "mac_address": "A0:36:9F:12:34:56",
+      "sector": "TI & Infraestrutura",
+      "os_name": "Windows 11 Pro 23H2",
+      "os_build": "22631.3447",
+      "cpu_model": "Intel Core i7-12700H @ 2.70GHz",
+      "cpu_cores": 14,
+      "cpu_usage_pct": 24.5,
+      "ram_total_gb": 32,
+      "ram_used_gb": 12.8,
+      "ram_usage_pct": 40,
+      "disk_total_gb": 512,
+      "disk_used_gb": 180.2,
+      "disk_usage_pct": 35.2,
+      "uptime_seconds": 148200,
+      "agent_version": "1.2.0",
+      "agent_status": "running",
+      "machine_secret_hash": "bef9eea7ac265eee4a8e995ec97695c5c9fb0e2bd9b95823c0f871458cea2352",
+      "created_at": "2026-10-26T12:47:28.737Z",
+      "last_heartbeat": "2026-10-26T12:47:28.740Z",
+      "status": "offline",
+      "metrics_history": [
+        {
+          "timestamp": "2026-10-26T12:47:28.740Z",
+          "cpu_usage_pct": 24.5,
+          "ram_usage_pct": 40,
+          "disk_usage_pct": 35.2
+        }
+      ]
+    },
+    {
+      "id": "9ba9c6ba-a821-4cda-a39e-9acfbc52799a",
+      "hostname": "TEST-PC-1793018957",
+      "logged_user": "operador.teste",
+      "ip_address": "192.168.1.99",
+      "mac_address": "AA:BB:CC:11:22:33",
+      "sector": "Calibração & Qualidade",
+      "os_name": "Windows 11 Pro",
+      "cpu_cores": 8,
+      "cpu_usage_pct": 25.5,
+      "ram_total_gb": 16,
+      "ram_used_gb": 6.4,
+      "ram_usage_pct": 40,
+      "disk_total_gb": 500,
+      "disk_used_gb": 120,
+      "disk_usage_pct": 24,
+      "uptime_seconds": 3600,
+      "agent_version": "1.2.0",
+      "agent_status": "running",
+      "machine_secret_hash": "6e10ff7d69db8c2f5387467636cc5905e080c57a33b05ffa65bfe8993faea4f6",
+      "created_at": "2026-10-26T12:49:17.781Z",
+      "last_heartbeat": "2026-10-26T12:49:17.783Z",
+      "status": "online",
+      "metrics_history": [
+        {
+          "timestamp": "2026-10-26T12:49:17.783Z",
+          "cpu_usage_pct": 25.5,
+          "ram_usage_pct": 40,
+          "disk_usage_pct": 24
+        }
+      ]
+    }
+  ],
+  "enrollment_tokens": [
+    {
+      "token": "DIGITRON-34586295748B",
+      "created_by": "admin",
+      "created_at": "2026-10-26T12:49:17.778Z",
+      "expires_at": "2026-11-25T12:49:17.778Z",
+      "max_uses": 50,
+      "current_uses": 1,
+      "assigned_sector": "Calibração & Qualidade",
+      "description": "Teste Unitário Automatizado",
+      "active": true
+    },
+    {
+      "token": "DIGITRON-INIT-5D112337",
+      "created_by": "system",
+      "created_at": "2026-10-26T12:47:13.623Z",
+      "expires_at": "2026-11-25T12:47:13.623Z",
+      "max_uses": 100,
+      "current_uses": 1,
+      "assigned_sector": "TI & Infraestrutura",
+      "description": "Token padrão de implantação da rede DIGI-TRON",
+      "active": true
+    }
+  ],
+  "alerts": [
+    {
+      "id": "d7f241d0-3f26-405a-bef6-1f9971b5cfdc",
+      "computer_id": "7b0ded63-b063-40f8-8a40-9b3daf1e285b",
+      "computer_name": "TI-NOTE-01",
+      "severity": "critical",
+      "type": "offline",
+      "message": "Computador \"TI-NOTE-01\" parou de enviar heartbeats há mais de 30s.",
+      "created_at": "2026-10-26T12:48:03.628Z",
+      "acknowledged": false
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "42eb8391-d7b3-4b81-b47c-228fa6d40b13",
+      "timestamp": "2026-10-26T12:49:17.781Z",
+      "user": "AGENT_REGISTRATION",
+      "action": "REGISTER_SUCCESS",
+      "resource_type": "COMPUTER",
+      "resource_id": "9ba9c6ba-a821-4cda-a39e-9acfbc52799a",
+      "details": "Novo agente registrado com sucesso para o computador TEST-PC-1793018957 (127.0.0.1).",
+      "ip_address": "127.0.0.1"
+    },
+    {
+      "id": "7190fe05-e143-49ff-8353-f2188530305e",
+      "timestamp": "2026-10-26T12:49:17.778Z",
+      "user": "admin",
+      "action": "CREATE_TOKEN",
+      "resource_type": "ENROLLMENT_TOKEN",
+      "details": "Token DIGITRON-34586295748B gerado com validade até 2026-11-25T12:49:17.778Z para o setor Calibração & Qualidade.",
+      "ip_address": "127.0.0.1"
+    },
+    {
+      "id": "1c214d18-8a6e-4d07-95d0-77f9fef0d161",
+      "timestamp": "2026-10-26T12:49:17.693Z",
+      "user": "admin",
+      "action": "LOGIN_SUCCESS",
+      "resource_type": "AUTH",
+      "details": "Login efetuado com sucesso via painel web.",
+      "ip_address": "127.0.0.1"
+    },
+    {
+      "id": "9c362273-e196-4024-8eff-0125fb650306",
+      "timestamp": "2026-10-26T12:48:03.628Z",
+      "user": "MONITOR_DAEMON",
+      "action": "STATUS_CHANGE",
+      "resource_type": "COMPUTER",
+      "resource_id": "7b0ded63-b063-40f8-8a40-9b3daf1e285b",
+      "details": "Máquina TI-NOTE-01 (192.168.1.55) marcada como OFFLINE por inatividade.",
+      "ip_address": "127.0.0.1"
+    },
+    {
+      "id": "b5f901eb-2c93-4190-a563-63acb0e9b865",
+      "timestamp": "2026-10-26T12:47:37.108Z",
+      "user": "admin",
+      "action": "UPDATE_SETTINGS",
+      "resource_type": "SYSTEM",
+      "details": "Configurações do servidor atualizadas. Timeout de heartbeat: 30s.",
+      "ip_address": "127.0.0.1"
+    },
+    {
+      "id": "97090cd4-643c-4710-8310-4c83dee6ef57",
+      "timestamp": "2026-10-26T12:47:28.737Z",
+      "user": "AGENT_REGISTRATION",
+      "action": "REGISTER_SUCCESS",
+      "resource_type": "COMPUTER",
+      "resource_id": "7b0ded63-b063-40f8-8a40-9b3daf1e285b",
+      "details": "Novo agente registrado com sucesso para o computador TI-NOTE-01 (127.0.0.1).",
+      "ip_address": "127.0.0.1"
+    },
+    {
+      "id": "3e477016-3a9b-4930-b012-1cf5b0ce4add",
+      "timestamp": "2026-10-26T12:47:17.833Z",
+      "user": "admin",
+      "action": "LOGIN_SUCCESS",
+      "resource_type": "AUTH",
+      "details": "Login efetuado com sucesso via painel web.",
+      "ip_address": "127.0.0.1"
+    },
+    {
+      "id": "0f0ee25a-7944-44cd-9cd9-ba5600428147",
+      "timestamp": "2026-10-26T12:47:13.623Z",
+      "user": "system",
+      "action": "INITIALIZE",
+      "resource_type": "SYSTEM",
+      "details": "Banco de dados do DIGI-TRON Monitor inicializado com sucesso.",
+      "ip_address": "127.0.0.1"
+    }
+  ],
+  "settings": {
+    "heartbeat_timeout_seconds": 30,
+    "alert_cpu_threshold_pct": 90,
+    "alert_ram_threshold_pct": 90,
+    "alert_disk_threshold_pct": 90,
+    "server_listen_ip": "0.0.0.0",
+    "server_listen_port": 3000,
+    "company_name": "DIGI-TRON Balanças Industriais",
+    "cors_allowed_origins": [
+      "*"
+    ]
+  }
+}

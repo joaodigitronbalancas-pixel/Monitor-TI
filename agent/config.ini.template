@@ -1,0 +1,29 @@
+[SERVER]
+# URL base do Servidor Central DIGI-TRON
+# Exemplo em desenvolvimento: http://192.168.1.100:3000
+# Exemplo em produção: https://monitor.digitron.local
+server_url = http://127.0.0.1:3000
+
+# Validação do certificado SSL em conexões HTTPS (True/False ou caminho para o arquivo CA .crt da empresa)
+verify_ssl = True
+
+# Timeout das requisições HTTP em segundos
+request_timeout = 10
+
+[AGENT]
+# Intervalo de envio do heartbeat em segundos
+heartbeat_interval = 60
+
+# Caminho para arquivo de log local (em produção Windows: C:\ProgramData\DigitronMonitor\agent.log)
+log_file = agent.log
+log_level = INFO
+
+[SECURITY]
+# Token de matrícula fornecido pelo Administrador no Painel
+# Usado apenas na primeira execução para registrar a máquina.
+enrollment_token = DIGITRON-CORP-2026
+
+# Identificadores da máquina preenchidos automaticamente após a matrícula:
+# NÃO edite manualmente a menos que orientado pela equipe de TI.
+machine_id = 
+machine_secret = 
